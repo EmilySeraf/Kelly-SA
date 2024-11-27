@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro e Login - NetTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="cadastro" class="form-container active">
+      <h2>Faça o seu cadastro:</h2>
+      <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required>
+
+        <button type="submit">Cadastre-se</button>
+      </form>
+      <p>Já tem uma conta? <span id="irParaLogin" style="cursor: pointer; color: #D1005D;">Entrar!</span></p>
+    </div>
+
+    <div id="login" class="form-container">
+      <h2>Faça o seu login:</h2>
+      <form id="loginForm">
+        <label for="emailLogin">Email:</label>
+        <input type="email" id="emailLogin" required>
+
+        <label for="senhaLogin">Senha:</label>
+        <input type="password" id="senhaLogin" required>
+
+        <p class="forgot-password">Esqueci minha senha!</p>
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Não tem uma conta? <span id="irParaCadastro" style="cursor: pointer; color: #D1005D;">Cadastre-se!</span></p>
+    </div>
+
+    <div class="image-container">
+      <img src="logo.png" alt="NetTube Logo">
+    </div>
+  </div>
+
+  <script src="app.js"></script> 
+</html>

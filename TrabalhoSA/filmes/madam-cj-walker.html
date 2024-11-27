@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Vida de Madam C.J. Walker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: black;
+            color: white;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 25px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 40vw;
+        }
+
+        .search-box input {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            margin: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-top: none;
+        }
+
+        .video-container {
+            position: relative;
+            padding-top: 56.25%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NetTube</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Filmes</a>
+            <a href="#">Séries</a>
+            <a href="#">Categorias</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar filmes" onkeyup="searchMovies()">
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PxIAdqHbloM?si=MSGqB8DMnWr0cc_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #D1005D; 
+  }
+  
+  .container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .form-container {
+    background-color: #000;
+    color: white;
+    padding: 40px;
+    width: 300px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 14px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #D1005D;
+    background-color: #000; 
+    color: white;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D1005D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  
+  .form-container button:hover {
+    background-color: #a30046;
+  }
+  
+  .form-container p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .form-container p a {
+    color: #D1005D;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    width: 350px;
+    height: auto;
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  #login, #cadastro {
+    display: none;
+  }
+  #login.active, #cadastro.active {
+    display: block;
+  }
